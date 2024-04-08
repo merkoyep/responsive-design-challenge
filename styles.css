@@ -1,0 +1,54 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+article {
+  background-color: rgb(108, 236, 181);
+}
+
+h1 {
+  margin: 0;
+}
+.features-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.features-list div {
+  background-color: bisque;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  article {
+    background-color: rgb(108, 236, 181);
+    margin: 2rem;
+  }
+  img {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .features {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  article {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  img {
+    width: 200px;
+  }
+  .features {
+    width: 100%;
+  }
+}
